@@ -1,0 +1,167 @@
+{
+  "users": [
+    {
+      "id": "user-ava",
+      "name": "Ava Thompson",
+      "username": "ava",
+      "email": "ava@pulse.social",
+      "bio": "Product designer sharing the story behind thoughtful digital experiences.",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80",
+      "location": "Seattle, WA",
+      "status": "Available to connect",
+      "friends": [
+        "user-jon",
+        "user-mila"
+      ],
+      "privacy": {
+        "profileVisibility": "friends",
+        "postVisibility": "friends"
+      }
+    },
+    {
+      "id": "user-jon",
+      "name": "Jon Lee",
+      "username": "jon",
+      "email": "jon@pulse.social",
+      "bio": "Startup founder building communities for remote teams.",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80",
+      "location": "Austin, TX",
+      "status": "Shipping ideas fast",
+      "friends": [
+        "user-ava"
+      ],
+      "privacy": {
+        "profileVisibility": "friends",
+        "postVisibility": "friends"
+      }
+    },
+    {
+      "id": "user-mila",
+      "name": "Mila Chen",
+      "username": "mila",
+      "email": "mila@pulse.social",
+      "bio": "Photographer and travel storyteller sharing visual stories.",
+      "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=300&q=80",
+      "location": "New York, NY",
+      "status": "In Tokyo for a photo sprint",
+      "friends": [
+        "user-ava"
+      ],
+      "privacy": {
+        "profileVisibility": "public",
+        "postVisibility": "friends"
+      }
+    },
+    {
+      "id": "user-noah",
+      "name": "Noah Brooks",
+      "username": "noah",
+      "email": "noah@pulse.social",
+      "bio": "Engineering at the intersection of AI and creative tooling.",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80",
+      "location": "Boston, MA",
+      "status": "Exploring the next deep-work loop",
+      "friends": [],
+      "privacy": {
+        "profileVisibility": "public",
+        "postVisibility": "public"
+      }
+    }
+  ],
+  "posts": [
+    {
+      "id": "post-5f70f455",
+      "authorId": "user-ava",
+      "content": "hi",
+      "createdAt": "2026-09-18T05:02:52.441Z",
+      "visibility": "friends",
+      "media": null,
+      "likes": [],
+      "comments": []
+    },
+    {
+      "id": "post-1",
+      "authorId": "user-mila",
+      "content": "Sunrise on the coast. A little reminder that creative momentum is often built in the quiet hours.",
+      "createdAt": "2026-09-10T08:10:00.000Z",
+      "visibility": "friends",
+      "media": {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+      },
+      "likes": [
+        "user-ava"
+      ],
+      "comments": [
+        {
+          "id": "comment-1",
+          "authorId": "user-jon",
+          "text": "That light is unreal. The framing is beautiful.",
+          "createdAt": "2026-09-10T08:35:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "post-2",
+      "authorId": "user-ava",
+      "content": "Designing a new workspace flow for small teams. Tiny improvements in context switching can compound into serious momentum.",
+      "createdAt": "2026-09-13T09:00:00.000Z",
+      "visibility": "public",
+      "media": null,
+      "likes": [
+        "user-jon",
+        "user-mila"
+      ],
+      "comments": [
+        {
+          "id": "comment-2",
+          "authorId": "user-noah",
+          "text": "Love this. The small changes really matter.",
+          "createdAt": "2026-09-13T09:12:00.000Z"
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "5c5a7c2c-8e61-4f26-87c1-e119eedbfa4f",
+      "userId": "user-ava",
+      "type": "post",
+      "message": "Your post is live.",
+      "read": false,
+      "createdAt": "2026-09-18T05:02:52.442Z"
+    },
+    {
+      "id": "81f447cb-28d6-4f9b-862a-a890ec7b9587",
+      "userId": "user-noah",
+      "type": "friend_request",
+      "message": "Ava Thompson sent you a friend request.",
+      "read": false,
+      "createdAt": "2026-09-18T05:01:54.827Z"
+    },
+    {
+      "id": "notif-1",
+      "userId": "user-ava",
+      "type": "friend_request",
+      "message": "Noah Brooks sent you a friend request.",
+      "read": false,
+      "createdAt": "2026-09-14T12:15:00.000Z"
+    }
+  ],
+  "friendRequests": [
+    {
+      "id": "request-1",
+      "fromUserId": "user-noah",
+      "toUserId": "user-ava",
+      "status": "pending",
+      "createdAt": "2026-09-14T12:15:00.000Z"
+    },
+    {
+      "id": "request-e967798a",
+      "fromUserId": "user-ava",
+      "toUserId": "user-noah",
+      "status": "pending",
+      "createdAt": "2026-09-18T05:01:54.827Z"
+    }
+  ]
+}
